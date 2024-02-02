@@ -6,6 +6,26 @@ html {
 }
 
 body {
-    background-color: rgb(91, 124, 214);
+    background-color: rgb(68, 128, 225);
     background-size: cover;
+}
+
+.father {
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+}
+
+.card {
+    background-color: blanchedalmond;
+    flex: 1 1 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    min-height: 250px;
+    max-width: 450px; 
+    text-align: center;
 }
