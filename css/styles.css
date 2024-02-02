@@ -28,4 +28,6 @@ body {
     min-height: 250px;
     max-width: 450px; 
     text-align: center;
+    border-radius: 20px;
+    box-shadow: #00000042 0px 1px 7px 0px;
 }
