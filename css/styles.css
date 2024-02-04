@@ -6,8 +6,9 @@ html {
 }
 
 body {
-    background-color: rgb(68, 128, 225);
+    background-color: #b7aeda;
     background-size: cover;
+    font-family: monospace;
 }
 
 .father {
@@ -20,7 +21,7 @@ body {
 }
 
 .card {
-    background-color: blanchedalmond;
+    background-color: #8471C7;
     flex: 1 1 150px;
     display: flex;
     flex-direction: column;
@@ -30,4 +31,87 @@ body {
     text-align: center;
     border-radius: 20px;
     box-shadow: #00000042 0px 1px 7px 0px;
+}
+
+#title {
+    font-size: 25px;
+    color: grey;
+    background-color: white;
+    border-radius: 6em;
+    border: none;
+    margin: 0 auto;
+    height: 30px;
+}
+
+.input {
+    width: 100%;
+    max-width: 260px;
+    height: 26px;
+    padding: 12px;
+    border-radius: 6em;
+    border: none;
+    outline: none;
+    transition: all 0.3s cubic-bezier(0.19, 1, 0.22, 1);
+    box-shadow: 0px 0px 20px -18px;
+}
+  
+.input:hover {
+    border: 2px solid white;
+    box-shadow: 0px 0px 20px -17px;
+}
+  
+.input:active {
+   transform: scale(0.95);
+}
+  
+.input:focus {
+   border: 2px solid grey;
+}
+
+.btn {
+    position: relative;
+    font-size: 17px;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 0.5em 2.5em;
+    display: inline-block;
+    border-radius: 6em;
+    border: none;
+    transition: all .2s;
+    font-family: inherit;
+    font-weight: 500;
+    color: grey;
+    background-color: white;
+}
+   
+.btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+   
+.btn:active {
+    transform: translateY(-1px);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+   
+.btn::after {
+    content: "";
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+    border-radius: 100px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition: all .4s;
+}
+   
+.btn::after {
+    background-color: #fff;
+}
+   
+.btn:hover::after {
+    transform: scaleX(1.4) scaleY(1.6);
+    opacity: 0;
 }
